@@ -9,7 +9,7 @@ export default function Sobremi() {
                 <div className="md:flex gap-8 items-center justify-between md:mx-0">
                     <div className="md:w-2/5 pointer-events-none select-none">
                         <img 
-                            src="/img/aboutme.webp" 
+                            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/img/aboutme.webp`} 
                             alt="Imagen Josué Zea Developer"
                         />
                     </div>
@@ -29,7 +29,7 @@ export default function Sobremi() {
                                 <div className='left-0 h-[1px] animate-border-width rounded-full bg-gradient-to-r from-[rgba(17,17,17,0)] via-white to-[rgba(17,17,17,0)] transition-all duration-1000' />
                             </div>
                             <div className="flex flex-col items-center space-y-2">
-                                <img src={`/img/${habilidades.icon}.svg`} alt={`imagen de ${habilidades.name}`} className="w-20 h-20 p-2 border border-grisclaro border-opacity-40 rounded-full" />
+                                <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/img/${habilidades.icon}.svg`} alt={`imagen de ${habilidades.name}`} className="w-20 h-20 p-2 border border-grisclaro border-opacity-40 rounded-full" />
                                 <h3 className="text-white uppercase font-semibold text-lg">{habilidades.name}</h3>
                                 <p className="text-grisclaro2 font-text text-base">{habilidades.description}</p>
                             </div>

@@ -11,7 +11,7 @@ export default function Landing() {
                         <div className="pointer-events-none select-none">
                             <img 
                                 className="w-auto h-[600px]"
-                                src="/img/josuezea.webp" 
+                                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/img/josuezea.webp`} 
                                 alt="Imagen de Josué Zea Developer" />
                         </div>
                     </div>
@@ -37,7 +37,7 @@ export default function Landing() {
                                     {redesData.map(red => (
                                         <li  key={red.id} className='cursor-pointer transition-all duration-300 hover:scale-150'>
                                             <a target="_blank" href={red.sitioWeb}>
-                                                <img className='w-4 h-4' title={red.nombre} src={`/img/${red.imagen}.svg`} alt={`imagen red social ${red.nombre}`} />
+                                                <img className='w-4 h-4' title={red.nombre} src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/img/${red.imagen}.svg`} alt={`imagen red social ${red.nombre}`} />
                                             </a>
                                         </li>
                                     ))}

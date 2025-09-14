@@ -79,13 +79,13 @@ export default function Contacto() {
                         </form>
                     </div>
                     <div className="flex flex-col items-center order-1 md:order-2">
-                        <img className='w-auto h-56 pointer-events-none cursor-none' src="/img/redes.svg" alt="imagen de redes" />
+                        <img className='w-auto h-56 pointer-events-none cursor-none' src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/img/redes.svg`} alt="imagen de redes" />
                         <p className='mb-3 mt-3 text-2xl text-white text-center md:text-left font-bold tracking-tight'>Redes Sociales</p>
                         <ul className='flex gap-4 mt-4'>
                             {redesData.map(red => (
                                 <li key={red.id} className='cursor-pointer transition-all duration-300 hover:scale-150'>
                                     <a target="_blank" href={red.sitioWeb}>
-                                        <img className='w-4 h-4' title={red.nombre} src={`/img/${red.imagen}.svg`} alt={`imagen red social ${red.nombre}`} />
+                                        <img className='w-4 h-4' title={red.nombre} src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/img/${red.imagen}.svg`} alt={`imagen red social ${red.nombre}`} />
                                     </a>
                                 </li>
                             ))}

@@ -22,7 +22,7 @@ export default function Footer() {
                                         <img
                                             className="w-6 h-6 sm:w-5 sm:h-5"
                                             title={red.nombre}
-                                            src={`/img/${red.imagen}.svg`}
+                                            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/img/${red.imagen}.svg`}
                                             alt={`imagen red social ${red.nombre}`}
                                         />
                                     </a>
@@ -65,7 +65,7 @@ export default function Footer() {
                                     <img
                                         className="w-7 h-7 transition duration-300 rounded-full"
                                         title={web.name}
-                                        src={`/img/${web.imagen}.svg`}
+                                        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/img/${web.imagen}.svg`}
                                         alt={`Logo de ${web.name}`}
                                     />
                                     <p className="text-white text-sm sm:text-base">{web.name}</p>

@@ -17,7 +17,7 @@ export default function ProyCard({ imgURL, changeBigProyImage, bigProyImg, isFir
         >
             <div className="flex justify-center items-center w-[45px] h-[45px] rounded-md overflow-hidden">
                 <img
-                    src={`/img/${imgURL}.webp`}
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/img/${imgURL}.webp`}
                     alt={`imagen de ${imgURL}`}
                     className="w-full h-full object-contain"
                 />
