@@ -1,13 +1,19 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NEXT_IS_PRODUCTION === "true";
+
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  output: "export", // <--- importante para generar /out
-  basePath: "/portfolio", // <--- debe ser el nombre EXACTO de tu repo
-  assetPrefix: "/portfolio/", // <--- ayuda a que sirva bien en GitHub Pages
-  images: {
-    unoptimized: true, // <--- necesario porque no hay servidor en Pages
-  },
-}
+  output: "export",
 
-module.exports = nextConfig
+  // 👇 Solo usa basePath/assetPrefix en producción
+  basePath: isProd ? process.env.NEXT_PUBLIC_BASE_PATH : "",
+  assetPrefix: isProd ? process.env.NEXT_PUBLIC_BASE_PATH + "/" : "",
+
+  images: {
+    // en GitHub Pages necesitamos unoptimized
+    unoptimized: isProd,
+  },
+};
+
+module.exports = nextConfig;
