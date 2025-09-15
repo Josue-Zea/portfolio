@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <Layout>  
         <Landing />
-        <div className="[background-image:url(/img/bg-web.webp)] bg-center bg-cover">
+        <div className={`[background-image:url(${process.env.NEXT_PUBLIC_BASE_PATH || ""}/img/bg-web.webp)] bg-center bg-cover`}>
           <Sobremi />
           <Proyectos />
           <Tecnologias />

@@ -11,7 +11,7 @@ export default function Logros() {
                         <div key={logro.id} className="relative overflow-hidden group rounded-lg bg-black border border-grisclaro border-opacity-20 bg-opacity-20">
                             <div
                                 className="bg-cover bg-center w-full h-52 lg:h-80 transition duration-500 transform group-hover:scale-110"
-                                style={{ backgroundImage: `url(/img/${logro.imagen}.webp)` }}
+                                style={{ backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH || ""}/img/${logro.imagen}.webp)` }}
                             >
                                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 group-hover:opacity-90 transition duration-300"></div>
                             </div>
