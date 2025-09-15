@@ -33,27 +33,13 @@ export default function Footer() {
 
                     {/* Columna 2 */}
                     <div>
-                        <h2 className="text-white uppercase font-semibold mb-4 text-sm sm:text-base">
-                            Navegación
-                        </h2>
-                        <ul className="flex flex-col gap-3">
-                            {enlacesData.map((enlace) => (
-                                <li key={enlace.id}>
-                                    <a
-                                        href={enlace.link}
-                                        className="py-1 text-white text-sm sm:text-base transition-colors duration-300 hover:text-textdestacado"
-                                    >
-                                        {enlace.name}
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
+
                     </div>
 
                     {/* Columna 3 */}
                     <div className="flex flex-col items-center sm:items-start">
                         <h2 className="text-white uppercase font-semibold mb-4 text-sm sm:text-base">
-                            Sobre esta web
+                            Acerca de esta web
                         </h2>
                         <p className="text-white text-sm sm:text-base mb-4">Creado con:</p>
                         <ul className="flex flex-wrap justify-center sm:flex-col gap-3 mb-4">
