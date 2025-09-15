@@ -10,17 +10,22 @@ import "react-toastify/dist/ReactToastify.css"
 
 export default function Home() {
   return (
-    <Layout>  
-        <Landing />
-        <div className={`[background-image:url(${process.env.NEXT_PUBLIC_BASE_PATH || ""}/img/bg-web.webp)] bg-center bg-cover`}>
-          <Sobremi />
-          <Proyectos />
-          <Tecnologias />
-          <Logros />
-          <Contacto />
-          <ToastContainer/>
-        </div>
+    <Layout>
+      <Landing />
+      <div
+        className="bg-center bg-cover"
+        style={{
+          backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH || ""}/img/bg-web.webp)`
+        }}
+      >
+        <Sobremi />
+        <Proyectos />
+        <Tecnologias />
+        <Logros />
+        <Contacto />
+        <ToastContainer />
+      </div>
     </Layout>
-    
+
   )
 }

@@ -9,7 +9,7 @@ export default function Layout({ children }) {
             <Head>
                 <title>Josué Zea | FullStack</title>
                 <meta name='description' content="Desarrollador FullStack especializado en FrontEnd, Transformando ideas en realidad a traves de codigo limpio y soluciones innovadoras" />
-                <link rel="icon" type="image/svg+xml" href="/img/logoicon.ico" />
+                <link rel="icon" type="image/svg+xml" href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/img/logoicon.ico`} />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="canonical" href="https://josue-zea.github.io/portfolio"></link>
                 <meta property="og:locale" content="es_ES" />
