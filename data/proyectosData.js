@@ -96,7 +96,7 @@ export const proyectosData = [
             },
             {
                 name: "MySQL",
-                image: "mysql"
+                image: "mysql-icon"
             }
         ]
     },
@@ -223,7 +223,7 @@ export const proyectosData = [
             },
             {
                 name: "MySQL",
-                image: "mysql"
+                image: "mysql-icon"
             }
         ]
     },

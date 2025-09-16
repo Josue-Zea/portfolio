@@ -71,7 +71,7 @@ export default function Contacto() {
                                 <label htmlFor="mensaje" className="block mb-2  font-medium text-white">Tu Mensaje</label>
                                 <textarea id="mensaje" value={formValues.mensaje || ""} onChange={handleInputChange} name="mensaje" rows="4" className="bg-black bg-opacity-20 border border-grisclaro border-opacity-20 text-white rounded-lg focus:ring-grisclaro focus:outline-none focus:ring-1  block w-full p-2.5 transition duration-300 resize-none" placeholder="Escribe tu Mensaje aqui" required></textarea>
                             </div>
-                            <button type="submit" className="flex flex-1 gap-1 items-center justify-center py-2.5 px-8 text-sm text-white font-medium  bg-colorboton rounded-full border transition duration-300 hover:bg-colorboton hover:scale-105 hover:shadow-[0_0_20px_3px_rgba(30,125,103,0.7)]">Enviar
+                            <button type="submit" className="flex flex-1 gap-1 items-center justify-center py-2.5 px-8 text-sm text-white font-bold bg-colorboton rounded-full border transition duration-300 hover:bg-colorboton hover:scale-105 hover:shadow-[0_0_20px_3px_rgba(30,125,103,0.7)]">Enviar
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
                                 </svg>

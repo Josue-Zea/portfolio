@@ -11,18 +11,21 @@ export const habilidadesData = [
         id: 1,
         name: "Tecnologías",
         icon: "tecnologias",
-        description: "Amplio dominio de herramientas y lenguajes como JavaScript, TypeScript, React, Node.js, AWS, bases de datos SQL/NoSQL y DevOps, garantizando soluciones robustas e innovadoras."
+        description:
+            "Experto en integrar diferentes lenguajes, frameworks y servicios en entornos modernos, asegurando que las soluciones sean estables, seguras y fáciles de mantener."
     },
     {
         id: 2,
         name: "UX/UI Design",
         icon: "uxdesign",
-        description: "Diseño centrado en el usuario, con enfoque en mejorar la experiencia digital a través de interfaces intuitivas, desarrollo ágil de conceptos y validación continua de funcionalidades."
+        description:
+            "Capacidad para transformar necesidades de negocio en interfaces claras y atractivas, priorizando la usabilidad y la accesibilidad para mejorar la experiencia del usuario."
     },
     {
         id: 3,
         name: "FullStack Development",
         icon: "frontend",
-        description: "Desarrollo de aplicaciones web y móviles escalables, aplicando buenas prácticas, arquitectura de microservicios y diseño responsive, optimizando rendimiento y usabilidad."
+        description:
+            "Desarrollo de productos de principio a fin, desde el backend hasta la interfaz, cuidando el rendimiento, la escalabilidad y la calidad del código en cada etapa."
     }
 ]

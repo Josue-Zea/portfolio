@@ -98,7 +98,7 @@ export const tecnologiasData = [
     {
         id: 17,
         nombre: "MySQL",
-        imagen: "mysql",
+        imagen: "mysql-icon",
         descripcion: "Base de datos relacional"
     }
 ];

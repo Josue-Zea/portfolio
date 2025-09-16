@@ -27,7 +27,7 @@ module.exports = {
         naranja700: "#c2410c",
         azul: "#010309",
         textdestacado: "#20bfa9",
-        colorboton: "#169483",
+        colorboton: "#1e7d67",
         colorboton2: "#441e7d",
         text: "#AEB3B9"
       },

@@ -103,23 +103,27 @@ export default function Proyectos() {
                                         </div>
                                     </div>
                                     <div className="h-full flex flex-col justify-between px-5 pb-5">
-                                        <div>
-                                            <div className="flex items-center justify-center gap-2 my-3">
-                                                <h5 className="text-xl text-white font-bold tracking-tight text-center">
-                                                    {proyecto.nombreProyecto}
-                                                </h5>
+                                        <div className="flex h-full flex-col justify-between">
+                                            <div>
+                                                <div className="flex items-center justify-center gap-2 my-3">
+                                                    <h3 className="text-xl text-white font-bold tracking-tight text-center">
+                                                        {proyecto.nombreProyecto}
+                                                    </h3>
 
-                                                {proyecto.sitioWeb && proyecto.sitioWeb.trim() !== "" && (
-                                                    <a
-                                                        target="_blank"
-                                                        href={proyecto.sitioWeb}
-                                                        className="ml-2 text-white hover:scale-110 transition"
-                                                    >
-                                                        <IconGlobal />
-                                                    </a>
-                                                )}
+                                                    {proyecto.sitioWeb && proyecto.sitioWeb.trim() !== "" && (
+                                                        <a
+                                                            target="_blank"
+                                                            href={proyecto.sitioWeb}
+                                                            className="ml-2 text-white hover:scale-110 transition"
+                                                            aria-label={`Visitar sitio web ${proyecto.nombre}`}
+                                                        >
+                                                            <IconGlobal />
+                                                            <span className="sr-only">Visitar sitio web {proyecto.nombre}</span>
+                                                        </a>
+                                                    )}
+                                                </div>
+                                                <p className="mb-[5px] font-normal text-grisclaro2 [text-wrap:pretty]">{proyecto.descripcionProyecto}</p>
                                             </div>
-                                            <p className="mb-[5px] font-normal text-grisclaro2 [text-wrap:pretty]">{proyecto.descripcionProyecto}</p>
                                             <ul className="flex items-center justify-center gap-3 mb-2">
                                                 {proyecto.tecnologias.map((tecnologia, index) => (
                                                     <li key={index} className="flex items-center gap-1 text-text px-4 py-1.5 text-sm font-medium border border-text border-opacity-30 rounded-full bg-[#07090D] bg-opacity-60">
