@@ -1,11 +1,14 @@
+import { useTranslation } from "next-i18next";
 import { logrosData } from "../data/logrosData"
 import Link from "next/link";
 
 export default function Logros() {
+    const { t } = useTranslation('common');
+
     return (
         <div>
             <div id="certificados" className=" max-w-screen-xl mx-auto md:w-5/6 lg:w-4/6 pt-10">
-                <h2 className="text-4xl font-title font-extrabold tracking-wider leading-none md:text-5xl lg:text-5xl text-white text-center mt-5 mb-10">Certificados</h2>
+                <h2 className="text-4xl font-title font-extrabold tracking-wider leading-none md:text-5xl lg:text-5xl text-white text-center mt-5 mb-10">{t('header.navegacion.certificados')}</h2>
                 <div className=" grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 mx-3 md:mx-0">
                     {logrosData.map(logro => (
                         <div key={logro.id} className="relative overflow-hidden group rounded-lg bg-black border border-grisclaro border-opacity-20 bg-opacity-20">

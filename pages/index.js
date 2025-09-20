@@ -7,6 +7,7 @@ import Logros from "../components/Logros"
 import Contacto from "../components/Contacto"
 import { ToastContainer } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default function Home() {
   return (
@@ -28,4 +29,12 @@ export default function Home() {
     </Layout>
 
   )
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  }
 }

@@ -1,0 +1,78 @@
+{
+  "header": {
+    "nombre": "Josué Zea",
+    "titulo": "FullStack Developer",
+    "descripcion": "Transformando ideas en realidad a través de código limpio y soluciones innovadoras",
+    "navegacion": {
+      "inicio": "Inicio",
+      "sobremi": "Sobre mí",
+      "proyectos": "Proyectos",
+      "tecnologias": "Tecnologías",
+      "certificados": "Certificados",
+      "contacto": "Contacto"
+    }
+  },
+  "sobremi": {
+    "titulo": "¿Quién Soy?",
+    "disponibleTrabajar": "Disponible para trabajar",
+    "descripcion1": "Soy Josué Zea, Mid FullStack Developer y Software Engineer con más de 3 años de experiencia en soluciones empresariales escalables. Especialista en JavaScript/TypeScript, React, Node.js y arquitecturas cloud en AWS.",
+    "descripcion2": "Experiencia en optimización de sistemas críticos, resolución de problemas complejos y liderazgo de equipos técnicos. Apasionado por la innovación tecnológica y la mejora continua.",
+    "descripcion3": "Innovador y proactivo, capaz de diseñar, crear y mantener sitios web atractivos e interactivos. Me adapto a las necesidades del equipo y cumplo con los objetivos establecidos.",
+    "habilidades": {
+      "tecnologias": {
+        "name": "Tecnologías",
+        "description": "Experto en integrar diferentes lenguajes, frameworks y servicios en entornos modernos, asegurando que las soluciones sean estables, seguras y fáciles de mantener."
+      },
+      "uxdesign": {
+        "name": "UX/UI Design",
+        "description": "Capacidad para transformar necesidades de negocio en interfaces claras y atractivas, priorizando la usabilidad y la accesibilidad para mejorar la experiencia del usuario."
+      },
+      "fullstack": {
+        "name": "FullStack Development",
+        "description": "Desarrollo de productos de principio a fin, desde el backend hasta la interfaz, cuidando el rendimiento, la escalabilidad y la calidad del código en cada etapa."
+      }
+    }
+  },
+  "tecnologias": {
+    "javascript": "Interactividad web",
+    "react": "Libreria de Javascript",
+    "nodejs": "JavaScript en el servidor",
+    "mongodb": "Base de datos NoSQL",
+    "nextjs": "Framework de React",
+    "tailwind": "Framework CSS",
+    "flutter": "Flutter Framework",
+    "angular": "Angular Framework",
+    "laravel": "Laravel Framework",
+    "oracle": "Oracle Database",
+    "firebase": "Backend as a Service",
+    "aws": "Amazon Web Services",
+    "docker": "Contenedores",
+    "typescript": "JavaScript tipado",
+    "springboot": "Java Framework",
+    "java": "Lenguaje de programación",
+    "mysql": "Base de datos relacional"
+  },
+  "botones": {
+    "descargarCV": "Descargar CV",
+    "contactame": "Contáctame",
+    "verProyecto": "Ver Proyecto",
+    "verCodigo": "Ver Código"
+  },
+  "footer": {
+    "derechos": "Todos los derechos reservados",
+    "desarrollado": "Desarrollado con",
+    "por": "por"
+  },
+  "contacto": {
+    "tuNombre": "Tu Nombre",
+    "tuCorreo": "Tu Correo",
+    "tuMensaje": "Tu Mensaje",
+    "enviar": "Enviar Mensaje",
+    "escribeTuNombre": "Escribe tu nombre",
+    "escribeTuCorreo": "Escribe tu correo electrónico",
+    "escribeTuMensaje": "Escribe tu mensaje aquí",
+    "completaTodoElFormulario": "Por favor, completa todos los campos del formulario.",
+    "redesSociales": "Redes Sociales",
+    "mensajeEnviadoCorrectamente": "¡Mensaje enviado correctamente!"
+  }
+}

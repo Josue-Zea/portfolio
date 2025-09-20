@@ -1,10 +1,117 @@
-import { tecnologiasData } from "../data/tecnologiasData"
+import { useTranslation } from 'next-i18next'
 
 export default function Tecnologias() {
+  const { t } = useTranslation('common');
+  
+  const tecnologiasData = [
+    {
+      id: 1,
+      nombre: "JavaScript",
+      imagen: "javascript",
+      descripcion: t('tecnologias.javascript')
+    },
+    {
+      id: 2,
+      nombre: "React",
+      imagen: "react",
+      descripcion: t('tecnologias.react')
+    },
+    {
+      id: 3,
+      nombre: "Node.js",
+      imagen: "nodejs",
+      descripcion: t('tecnologias.nodejs')
+    },
+    {
+      id: 4,
+      nombre: "MongoDB",
+      imagen: "mongodb",
+      descripcion: t('tecnologias.mongodb')
+    },
+    {
+      id: 5,
+      nombre: "Next.js",
+      imagen: "nextjs",
+      descripcion: t('tecnologias.nextjs')
+    },
+    {
+      id: 6,
+      nombre: "Tailwind",
+      imagen: "tailwind",
+      descripcion: t('tecnologias.tailwind')
+    },
+    {
+      id: 7,
+      nombre: "Flutter",
+      imagen: "flutter",
+      descripcion: t('tecnologias.flutter')
+    },
+    {
+      id: 8,
+      nombre: "Angular",
+      imagen: "angular",
+      descripcion: t('tecnologias.angular')
+    },
+    {
+      id: 9,
+      nombre: "Laravel",
+      imagen: "laravel",
+      descripcion: t('tecnologias.laravel')
+    },
+    {
+      id: 10,
+      nombre: "Oracle",
+      imagen: "oracle",
+      descripcion: t('tecnologias.oracle')
+    },
+    {
+      id: 11,
+      nombre: "Firebase",
+      imagen: "firebase",
+      descripcion: t('tecnologias.firebase')
+    },
+    {
+      id: 12,
+      nombre: "AWS",
+      imagen: "aws",
+      descripcion: t('tecnologias.aws')
+    },
+    {
+      id: 13,
+      nombre: "Docker",
+      imagen: "docker",
+      descripcion: t('tecnologias.docker')
+    },
+    {
+      id: 14,
+      nombre: "TypeScript",
+      imagen: "typescript",
+      descripcion: t('tecnologias.typescript')
+    },
+    {
+      id: 15,
+      nombre: "Spring Boot",
+      imagen: "springboot",
+      descripcion: t('tecnologias.springboot')
+    },
+    {
+      id: 16,
+      nombre: "Java",
+      imagen: "java",
+      descripcion: t('tecnologias.java')
+    },
+    {
+      id: 17,
+      nombre: "MySQL",
+      imagen: "mysql-icon",
+      descripcion: t('tecnologias.mysql')
+    }
+  ];
+
   return (
     <div className="max-w-screen-xl mx-auto md:w-5/6 lg:w-4/6 pt-10">
       <h2 className="text-4xl font-title font-extrabold tracking-wider leading-none md:text-5xl lg:text-5xl text-white text-center mb-10">
-        Habilidades
+        {t('header.navegacion.tecnologias')}
       </h2>
 
       {/* Cinta infinita */}

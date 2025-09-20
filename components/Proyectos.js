@@ -2,6 +2,7 @@ import { useState } from "react";
 import { proyectosData } from "../data/proyectosData";
 import ProyCard from "./ProyCard";
 import { IconGlobal } from "./Icons";
+import { useTranslation } from "next-i18next";
 
 const ImageZoomModal = ({ isOpen, onClose, imageSrc, altText }) => {
     if (!isOpen) return null;
@@ -38,6 +39,7 @@ export default function Proyectos() {
         altText: '',
         proyectoNombre: ''
     });
+    const { t } = useTranslation('common');
 
     const updateBigProyImg = (proyectoId, imgURL) => {
         setBigProyImgs((prevBigProyImgs) => ({
@@ -68,7 +70,7 @@ export default function Proyectos() {
         <>
             <div>
                 <div id="proyectos" className="max-w-screen-xl mx-auto md:w-5/6 lg:w-4/6 pt-10">
-                    <h2 className="text-4xl font-title font-extrabold tracking-wider leading-none md:text-5xl lg:text-5xl text-white text-center mt-5 mb-10">Proyectos</h2>
+                    <h2 className="text-4xl font-title font-extrabold tracking-wider leading-none md:text-5xl lg:text-5xl text-white text-center mt-5 mb-10">{t('header.navegacion.proyectos')}</h2>
                     <div className="grid place-content-center md:grid-cols-2 lg:grid-cols-2 gap-6 mb-10 md:mx-0 px-3 md:px-0">
                         {proyectosData.map(proyecto => {
                             const bigProyImg = bigProyImgs[proyecto.id] || proyecto.imagenes[0];
