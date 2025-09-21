@@ -59,8 +59,9 @@
     "verCodigo": "View Code"
   },
   "footer": {
-    "derechos": "All rights reserved",
-    "desarrollado": "Developed with",
+    "acercaDeEstaWeb": "About this website",
+    "slogan": "Transforming ideas into reality through clean code and innovative solutions",
+    "creadoCon": "Created with:",
     "por": "by"
   },
   "contacto": {
@@ -74,5 +75,77 @@
     "completaTodoElFormulario": "Please fill out all fields in the form.",
     "redesSociales": "Social Media",
     "mensajeEnviadoCorrectamente": "Message sent successfully!"
+  },
+  "proyectos": {
+    "bolsaEmpleo": {
+      "titulo": "Job Board",
+      "descripcion": "McDonald’s Job Board, a project designed to connect candidates with the employment opportunities available at the company."
+    },
+    "celebraciones": {
+      "titulo": "Kids’ Celebrations",
+      "descripcion": "McDonald’s website for booking and quoting children’s birthday parties at its restaurants."
+    },
+    "inventario": {
+      "titulo": "Application Inventory",
+      "descripcion": "Application developed to manage a company’s applications, their documentation, manuals, and more."
+    },
+    "sitioInstitucional": {
+      "titulo": "McDonald’s Mesoamerica Website",
+      "descripcion": "Corporate website for McDonald’s Mesoamerica, showcasing information about the company, its values, history, promotions, and relevant news."
+    },
+    "miPos": {
+      "titulo": "MiPOS",
+      "descripcion": "Mobile application to process order payments using the Bac Credomatic SDK."
+    },
+    "RadiHola": {
+      "titulo": "RadiHola",
+      "descripcion": "Mobile application to listen to Guatemalan national radio stations, stream podcasts, and play pre-recorded shows."
+    },
+    "evisor": {
+      "titulo": "E-visor",
+      "descripcion": "Web application dedicated to digitizing documents for the Guatemalan Mercantile Registry, centralizing all documents on this platform."
+    },
+    "trace": {
+      "titulo": "Trace",
+      "descripcion": "Web application focused on tracking tickets and monitoring the status of requests for the Guatemalan Mercantile Registry."
+    },
+    "modoFamilia": {
+      "titulo": "Family Mode",
+      "descripcion": "Web application featuring different recreational activities related to McDonald’s to enjoy with the whole family."
+    },
+    "monitorFraudes": {
+      "titulo": "Fraud Monitor",
+      "descripcion": "Web application dedicated to detecting and preventing fraud in orders and user actions in real time."
+    }
+  },
+  "certificados": {
+    "kubernetes": {
+      "titulo": "Kubernetes for Beginners",
+      "descripcion": "Kodekloud course on Kubernetes. A practical introduction to container orchestration and deploying applications on clusters."
+    },
+    "cloudComputing": {
+      "titulo": "Cloud Computing",
+      "descripcion": "Google Cloud fundamentals course. Explains service models (IaaS, PaaS, SaaS) and the value of scalability."
+    },
+    "linuxEssentials": {
+      "titulo": "Linux Essentials (NDG)",
+      "descripcion": "NDG Linux fundamentals course. Covers basic commands, file structure, and the importance of open-source software in IT environments."
+    },
+    "pythonCore": {
+      "titulo": "Python Core",
+      "descripcion": "Sololearn Python course. Introduction to programming with syntax, data structures, and essential development concepts."
+    },
+    "cybersecurity": {
+      "titulo": "Cybersecurity Essentials",
+      "descripcion": "Cisco networking fundamentals course. Teaches cybersecurity concepts, common threats, and basic digital protection practices."
+    },
+    "scrum": {
+      "titulo": "SCRUM Foundation Professional",
+      "descripcion": "CertiProf certification in Scrum. Covers agile principles, roles, events, and artifacts for effective project management."
+    },
+    "sql": {
+      "titulo": "SQL Fundamentals",
+      "descripcion": "SQL fundamentals course. Teaches basic queries, database manipulation, and relational modeling concepts."
+    }
   }
 }

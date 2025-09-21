@@ -59,8 +59,9 @@
     "verCodigo": "Ver Código"
   },
   "footer": {
-    "derechos": "Todos los derechos reservados",
-    "desarrollado": "Desarrollado con",
+    "acercaDeEstaWeb": "Acerca de esta web",
+    "slogan": "Transformando ideas en realidad a través de código limpio y soluciones innovadoras",
+    "creadoCon": "Creado con:",
     "por": "por"
   },
   "contacto": {
@@ -74,5 +75,77 @@
     "completaTodoElFormulario": "Por favor, completa todos los campos del formulario.",
     "redesSociales": "Redes Sociales",
     "mensajeEnviadoCorrectamente": "¡Mensaje enviado correctamente!"
+  },
+  "proyectos": {
+    "bolsaEmpleo": {
+      "titulo": "Bolsa de empleo",
+      "descripcion": "Bolsa de empleo de McDonald´s, un proyecto que busca conectar a los candidatos con las oportunidades laborales disponibles en la empresa."
+    },
+    "celebraciones": {
+      "titulo": "Celebraciones infantiles",
+      "descripcion": "Sitio web de McDonald´s para la reserva y cotización de fiestas infantiles en sus restaurantes."
+    },
+    "inventario": {
+      "titulo": "Inventario de aplicaciones",
+      "descripcion": "Aplicación desarrollada para el control de las aplicaciones que maneja una empresa, su documentación, manuales, etc."
+    },
+    "sitioInstitucional": {
+      "titulo": "Sitio McDonald´s Mesoamérica",
+      "descripcion": "Sitio web corporativo de McDonald´s Mesoamérica, donde se muestra información sobre la empresa, sus valores, historia, promociones y noticias relevantes."
+    },
+    "miPos": {
+      "titulo": "MiPOS",
+      "descripcion": "Aplicación móvil para realizar el cobro de ordenes mediante SDK de Bac Credomatic."
+    },
+    "RadiHola": {
+      "titulo": "RadiHola",
+      "descripcion": "Aplicación móvil para escuchar radios nacionales de Guatemala, streaming de podcasts y pregrabados."
+    },
+    "evisor": {
+      "titulo": "E-visor",
+      "descripcion": "Aplicación web dedicada a la digitalización de documentos para el Registro Mercantil de Guatemala, centralizando sus documentos en esta plataforma."
+    },
+    "trace": {
+      "titulo": "Trace",
+      "descripcion": "Aplicación web dedicada al seguimiento de tickets y estado de solicitudes del Registro Mercantil de Guatemala."
+    },
+    "modoFamilia": {
+      "titulo": "Modo Familia",
+      "descripcion": "Aplicación web dedicada a presentar diferentes actividades recreativas relacionadas a McDonald´s para disfrutar en familia."
+    },
+    "monitorFraudes": {
+      "titulo": "Monitor de Fraudes",
+      "descripcion": "Aplicación web dedicada a la detección y prevención de fraudes en las ordenes y acciones realizadas por los usuarios en tiempo real."
+    }
+  },
+  "certificados": {
+    "kubernetes": {
+      "titulo": "Kubernetes para Principiantes",
+      "descripcion": "Curso de Kodekloud sobre Kubernetes. Introducción práctica a la orquestación de contenedores y despliegue de aplicaciones en clústeres."
+    },
+    "cloudComputing": {
+      "titulo": "Computación en la Nube",
+      "descripcion": "Curso de fundamentos de computación en la nube de Google. Explica los modelos de servicio (IaaS, PaaS, SaaS) y el valor de la escalabilidad."
+    },
+    "linuxEssentials": {
+      "titulo": "Fundamentos de Linux (NDG)",
+      "descripcion": "Curso de fundamentos de Linux de NDG. Cubre comandos básicos, estructura de archivos y la importancia del software libre en entornos de TI."
+    },
+    "pythonCore": {
+      "titulo": "Python Core",
+      "descripcion": "Curso de Python de Sololearn. Introducción a programación con sintaxis, estructuras de datos y conceptos esenciales de desarrollo."
+    },
+    "cybersecurity": {
+      "titulo": "Fundamentos de Ciberseguridad",
+      "descripcion": "Curso de fundamentos de redes de Cisco. Enseña conceptos de ciberseguridad, amenazas comunes y prácticas básicas de protección digital."
+    },
+    "scrum": {
+      "titulo": "SCRUM Foundation Professional",
+      "descripcion": "Certificación de CertiProf en Scrum. Aborda los principios ágiles, roles, eventos y artefactos para una gestión de proyectos efectiva."
+    },
+    "sql": {
+      "titulo": "Fundamentos de SQL",
+      "descripcion": "Curso de fundamentos de SQL. Enseña consultas básicas, manipulación de bases de datos y conceptos de modelado relacional."
+    }
   }
 }

@@ -35,8 +35,8 @@ export default function Logros() {
                                     </Link>
                                 </div>
                                 <div className="text-white opacity-0 group-hover:opacity-100 transition duration-500">
-                                    <h2 className="text-xl font-bold">{logro.titulo}</h2>
-                                    <p className="hidden lg:block mt-2 text-sm text-grisclaro2">{logro.descripcion}</p>
+                                    <h2 className="text-xl font-bold">{t(logro.titulo)}</h2>
+                                    <p className="hidden lg:block mt-2 text-sm text-grisclaro2">{t(logro.descripcion)}</p>
                                 </div>
                             </div>
                         </div>

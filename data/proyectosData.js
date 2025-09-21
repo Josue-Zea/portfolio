@@ -1,8 +1,8 @@
 export const proyectosData = [
     {
         id: 1,
-        nombreProyecto: "Bolsa de empleo",
-        descripcionProyecto: "Bolsa de empleo de McDonald´s, un proyecto que busca conectar a los candidatos con las oportunidades laborales disponibles en la empresa.",
+        nombreProyecto: 'proyectos.bolsaEmpleo.titulo',
+        descripcionProyecto: 'proyectos.bolsaEmpleo.descripcion',
         sitioWeb: "https://bolsadetrabajo.mcdgente.com",
         imagenes: [
             "bolsaempleo-desktop",
@@ -26,8 +26,8 @@ export const proyectosData = [
     },
     {
         id: 2,
-        nombreProyecto: "Celebraciones infantiles",
-        descripcionProyecto: "Sitio web de McDonald´s para la reserva y cotización de fiestas infantiles en sus restaurantes.",
+        nombreProyecto: "proyectos.celebraciones.titulo",
+        descripcionProyecto: "proyectos.celebraciones.descripcion",
         sitioWeb: "https://celebraciones.mcdonalds.com.gt",
         imagenes: [
             "celebraciones-desktop",
@@ -51,8 +51,8 @@ export const proyectosData = [
     },
     {
         id: 3,
-        nombreProyecto: "Inventario de aplicaciones",
-        descripcionProyecto: "Aplicación desarrollada para el control de las aplicaciones que maneja una empresa, su documentación, manuales, etc.",
+        nombreProyecto: "proyectos.inventario.titulo",
+        descripcionProyecto: "proyectos.inventario.descripcion",
         sitioWeb: "",
         imagenes: [
             "inventario-w-1",
@@ -77,8 +77,8 @@ export const proyectosData = [
     },
     {
         id: 4,
-        nombreProyecto: "Sitio McDonald´s Mesoamérica",
-        descripcionProyecto: "Sitio web corporativo de McDonald´s Mesoamérica, donde se muestra información sobre la empresa, sus valores, historia, promociones y noticias relevantes.",
+        nombreProyecto: "proyectos.sitioInstitucional.titulo",
+        descripcionProyecto: "proyectos.sitioInstitucional.descripcion",
         sitioWeb: "https://mcdonalds.com.gt",
         imagenes: [
             "sitio-desktop",
@@ -102,8 +102,8 @@ export const proyectosData = [
     },
     {
         id: 5,
-        nombreProyecto: "MiPOS",
-        descripcionProyecto: "Aplicación móvil para realizar el cobro de ordenes mediante SDK de Bac Credomatic.",
+        nombreProyecto: "proyectos.miPos.titulo",
+        descripcionProyecto: "proyectos.miPos.descripcion",
         sitioWeb: "",
         imagenes: [
             "mipos-1",
@@ -127,8 +127,8 @@ export const proyectosData = [
     },
     {
         id: 6,
-        nombreProyecto: "RadiHola",
-        descripcionProyecto: "Aplicación móvil para escuchar radios nacionales de Guatemala, streaming de podcasts y pregrabados.",
+        nombreProyecto: "proyectos.RadiHola.titulo",
+        descripcionProyecto: "proyectos.RadiHola.descripcion",
         sitioWeb: "",
         imagenes: [
             "radihola-1",
@@ -152,8 +152,8 @@ export const proyectosData = [
     },
     {
         id: 7,
-        nombreProyecto: "E-visor",
-        descripcionProyecto: "Aplicación web dedicada a la digitalización de documentos para el Registro Mercantil de Guatemala, centralizando sus documentos en esta plataforma.",
+        nombreProyecto: "proyectos.evisor.titulo",
+        descripcionProyecto: "proyectos.evisor.descripcion",
         sitioWeb: "",
         imagenes: [
             "evisor-1",
@@ -178,8 +178,8 @@ export const proyectosData = [
     },
     {
         id: 8,
-        nombreProyecto: "Trace",
-        descripcionProyecto: "Aplicación web dedicada al seguimiento de tickets y estado de solicitudes del Registro Mercantil de Guatemala.",
+        nombreProyecto: "proyectos.trace.titulo",
+        descripcionProyecto: "proyectos.trace.descripcion",
         sitioWeb: "",
         imagenes: [
             "trace-1",
@@ -203,8 +203,8 @@ export const proyectosData = [
     },
     {
         id: 9,
-        nombreProyecto: "Modo Familia",
-        descripcionProyecto: "Aplicación web dedicada a presentar diferentes actividades recreativas relacionadas a McDonald´s para disfrutar en familia.",
+        nombreProyecto: "proyectos.modoFamilia.titulo",
+        descripcionProyecto: "proyectos.modoFamilia.descripcion",
         sitioWeb: "https://modofamilia.mcdonalds.com.gt",
         imagenes: [
             "modofamilia-1",
@@ -229,8 +229,8 @@ export const proyectosData = [
     },
     {
         id: 10,
-        nombreProyecto: "Monitor de fraudes",
-        descripcionProyecto: "Aplicación web dedicada a la detección y prevención de fraudes en las ordenes y acciones realizadas por los usuarios en tiempo real.",
+        nombreProyecto: "proyectos.monitorFraudes.titulo",
+        descripcionProyecto: "proyectos.monitorFraudes.descripcion",
         sitioWeb: "https://uat.fraud.mcdonaldsapis.com/signin",
         imagenes: [
             "fraud-1",

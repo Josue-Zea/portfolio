@@ -1,16 +1,17 @@
-import { redesData, enlacesData, webAbout } from "../data/redesData"
+import { useTranslation } from "next-i18next";
+import { redesData, webAbout } from "../data/redesData"
 
 export default function Footer() {
+    const { t } = useTranslation('common');
+
     return (
         <footer className="bg-negrochido backdrop-blur-md bg-opacity-80 rounded-t-3xl border-t border-t-colorboton border-opacity-50">
             <div className="max-w-screen-xl mx-auto px-5 sm:px-8 md:w-5/6 lg:w-4/6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 py-10 font-body text-center sm:text-left">
 
-                    {/* Columna 1 */}
                     <div className="flex flex-col items-center sm:items-start">
                         <p className="text-white text-sm sm:text-base leading-relaxed">
-                            Transformando ideas en realidad a través de código limpio y
-                            soluciones innovadoras
+                            {t("footer.slogan")}
                         </p>
                         <ul className="flex gap-6 mt-6">
                             {redesData.map((red) => (
@@ -31,17 +32,14 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    {/* Columna 2 */}
                     <div>
-
                     </div>
 
-                    {/* Columna 3 */}
                     <div className="flex flex-col items-center sm:items-start">
                         <h2 className="text-white uppercase font-semibold mb-4 text-sm sm:text-base">
-                            Acerca de esta web
+                            {t("footer.acercaDeEstaWeb")}
                         </h2>
-                        <p className="text-white text-sm sm:text-base mb-4">Creado con:</p>
+                        <p className="text-white text-sm sm:text-base mb-4">{t("footer.creadoCon")}</p>
                         <ul className="flex flex-wrap justify-center sm:flex-col gap-3 mb-4">
                             {webAbout.map((web) => (
                                 <li
@@ -59,7 +57,7 @@ export default function Footer() {
                             ))}
                         </ul>
                         <p className="text-white text-sm">
-                            por{" "}
+                            {t("footer.por")}{" "}
                             <span className="font-semibold hover:text-colorboton">
                                 Josué Zea
                             </span>

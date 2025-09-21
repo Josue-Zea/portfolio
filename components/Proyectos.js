@@ -109,7 +109,7 @@ export default function Proyectos() {
                                             <div>
                                                 <div className="flex items-center justify-center gap-2 my-3">
                                                     <h3 className="text-xl text-white font-bold tracking-tight text-center">
-                                                        {proyecto.nombreProyecto}
+                                                        {t(proyecto.nombreProyecto)}
                                                     </h3>
 
                                                     {proyecto.sitioWeb && proyecto.sitioWeb.trim() !== "" && (
@@ -124,7 +124,7 @@ export default function Proyectos() {
                                                         </a>
                                                     )}
                                                 </div>
-                                                <p className="mb-[5px] font-normal text-grisclaro2 [text-wrap:pretty]">{proyecto.descripcionProyecto}</p>
+                                                <p className="mb-[5px] font-normal text-grisclaro2 [text-wrap:pretty]">{t(proyecto.descripcionProyecto)}</p>
                                             </div>
                                             <ul className="flex items-center justify-center gap-3 mb-2">
                                                 {proyecto.tecnologias.map((tecnologia, index) => (

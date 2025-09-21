@@ -1,6 +1,6 @@
 import { redesData } from "../data/redesData"
 import Link from "next/link"
-import { useTranslation } from 'next-i18next'
+import { useTranslation } from 'react-i18next'
 
 export default function Landing() {
     const { t } = useTranslation('common');
