@@ -1,6 +1,7 @@
 {
   "header": {
     "nombre": "Josué Zea",
+    "saludo": "Hi, I'm",
     "titulo": "FullStack Developer",
     "descripcion": "Transforming ideas into reality through clean code and innovative solutions",
     "navegacion": {
@@ -146,6 +147,10 @@
     "sql": {
       "titulo": "SQL Fundamentals",
       "descripcion": "SQL fundamentals course. Teaches basic queries, database manipulation, and relational modeling concepts."
+    },
+    "java": {
+      "titulo": "Java Intermediate",
+      "descripcion": "Java Intermediate course. Delves into advanced concepts of object-oriented programming and application development."
     }
   }
 }

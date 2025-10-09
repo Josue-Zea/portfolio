@@ -54,5 +54,13 @@ export const logrosData = [
         fecha: "Marzo de 2021",
         imagen: "certificate-sql",
         sitioWeb: "https://drive.google.com/file/d/15A5N8-Q6ooYbtCNCNYY_WgPy9b0RyJH3/view?usp=sharing"
+    },
+    {
+        id: 8,
+        titulo: "certificados.java.titulo",
+        descripcion: "certificados.java.descripcion",
+        fecha: "Septiembre de 2025",
+        imagen: "certificate-java-intermediate",
+        sitioWeb: "https://drive.google.com/file/d/1Cav9BxHY3Wa9r4lt_6e-_5VfGf39bqtu/view?usp=sharing"
     }
 ]

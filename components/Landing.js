@@ -9,9 +9,8 @@ export default function Landing() {
             <div id="inicio" className="max-w-screen-xl mx-auto md:w-4/6 2xl:w-4/6 mt-48 lg:mt-0">
                 <div className="flex flex-col lg:flex-row items-center justify-center px-3 md:px-0">
 
-                    {/* Textos */}
                     <div className="lg:w-1/2 flex flex-col text-center lg:text-left order-first lg:order-first">
-                        <p className="text-[#9ae5db] font-semibold text-2xl mb-2 leading-none">Hola, soy</p>
+                        <p className="text-[#9ae5db] font-semibold text-2xl mb-2 leading-none">{t('header.saludo')}</p>
                         <h1 className="text-4xl font-title font-black leading-none md:text-6xl lg:text-5xl 2xl:text-7xl text-white">{t('header.nombre')}</h1>
                         <p className="mb-4 mt-2 lg:mt-0 text-2xl font-semibold font-secundary leading-none md:text-3xl lg:text-4xl text-textdestacado">{t('header.titulo')}</p>
                         <p className="mb-6 text-lg font-normal text-grisclaro2 md:text-base 2xl:text-xl [text-wrap:balance]">{t('header.descripcion')}</p>
