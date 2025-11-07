@@ -3,6 +3,7 @@ import Link from "next/link"
 import { useTranslation } from 'react-i18next'
 
 export default function Landing() {
+    const { i18n } = useTranslation();
     const { t } = useTranslation('common');
     return (
         <section className={`[background-image:url(${process.env.NEXT_PUBLIC_BASE_PATH || ""}/img/hero.webp)] bg-top bg-cover h-[915px] lg:h-[700px] flex items-center`}>
@@ -16,7 +17,7 @@ export default function Landing() {
                         <p className="mb-6 text-lg font-normal text-grisclaro2 md:text-base 2xl:text-xl [text-wrap:balance]">{t('header.descripcion')}</p>
 
                         <div className="flex items-center justify-center lg:justify-start gap-5">
-                            <Link legacyBehavior href="https://drive.google.com/file/d/1_iWJ6VefW4-Td6v39_OD7xhmhGlA4s3I/view?usp=sharing">
+                            <Link legacyBehavior href={i18n.language === 'es' ? 'https://drive.google.com/file/d/1yaeFqIJeDZUWS6APVDF-oAvOP4Or7UQM/view?usp=drive_link' : 'https://drive.google.com/file/d/1mbRPHPwk1ADlRseK7U7hAbn540B9WiEa/view?usp=sharing'} >
                                 <a
                                     target="_blank"
                                     className="flex gap-1 items-center py-2.5 px-5 text-sm text-white font-medium bg-transparent rounded-full border transition duration-300 hover:bg-colorboton hover:scale-105 hover:shadow-[0_0_20px_3px_rgba(30,125,103,0.7)]"
