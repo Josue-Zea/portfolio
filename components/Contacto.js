@@ -2,7 +2,7 @@ import { useRef, useState } from 'react'
 import emailjs from 'emailjs-com'
 import { redesData } from '../data/redesData';
 import { toast } from "react-toastify"
-import { useTranslation } from 'next-i18next';
+import { useTranslation } from 'react-i18next';
 
 export default function Contacto() {
     const form = useRef();
@@ -19,14 +19,17 @@ export default function Contacto() {
             return;
         }
 
-        emailjs.send('service_ycaodod', 'template_jb9v0h8',
+        emailjs.send(
+            process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
             {
                 from_name: "---",
                 name: nombre.value,
                 time: new Date().toLocaleString(),
                 message: mensaje.value,
                 email: email.value,
-            }, "3wpKDSE5qr10RetdE"
+            },
+            process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
         )
             .then((_) => {
                 toast.success(t('contacto.mensajeEnviadoCorrectamente'), {

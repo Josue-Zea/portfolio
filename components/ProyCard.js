@@ -1,5 +1,5 @@
 
-export default function ProyCard({ imgURL, changeBigProyImage, bigProyImg, isFirstImage }) {
+export default function ProyCard({ imgURL, changeBigProyImage, bigProyImg, isFirstImage, proyectoNombre }) {
     const handleClick = () => {
         if (bigProyImg !== imgURL) {
             changeBigProyImage(imgURL);
@@ -18,7 +18,8 @@ export default function ProyCard({ imgURL, changeBigProyImage, bigProyImg, isFir
             <div className="flex justify-center items-center w-[45px] h-[45px] rounded-md overflow-hidden">
                 <img
                     src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/img/${imgURL}.webp`}
-                    alt={`imagen de ${imgURL}`}
+                    alt={`Miniatura de ${proyectoNombre || imgURL}`}
+                    loading="lazy"
                     className="w-full h-full object-contain"
                 />
             </div>

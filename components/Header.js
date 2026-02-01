@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
 
@@ -51,9 +51,9 @@ export default function Header() {
         >
           <span className="sr-only">Open main menu</span>
           {isMenuOpen ? (
-            <XIcon className="w-7 h-7 text-white" aria-hidden="true" />
+            <XMarkIcon className="w-7 h-7 text-white" aria-hidden="true" />
           ) : (
-            <MenuIcon className="w-7 h-7 text-white" aria-hidden="true" />
+            <Bars3Icon className="w-7 h-7 text-white" aria-hidden="true" />
           )}
         </button>
         <div
@@ -76,26 +76,3 @@ export default function Header() {
     </nav>
   );
 }
-
-const enlaces = [
-  {
-      id:1,
-      name: "Sobre mi",
-      link: "#sobremi"
-  },
-  {
-      id:2,
-      name: "Proyectos",
-      link: "#proyectos"
-  },
-  {
-      id:3,
-      name: "Certificados",
-      link: "#certificados"
-  },
-  {
-      id:4,
-      name: "Contacto",
-      link: "#contacto"
-  }
-]

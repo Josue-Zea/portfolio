@@ -2,7 +2,7 @@ import { useState } from "react";
 import { proyectosData } from "../data/proyectosData";
 import ProyCard from "./ProyCard";
 import { IconGlobal } from "./Icons";
-import { useTranslation } from "next-i18next";
+import { useTranslation } from "react-i18next";
 
 const ImageZoomModal = ({ isOpen, onClose, imageSrc, altText }) => {
     if (!isOpen) return null;
@@ -81,11 +81,12 @@ export default function Proyectos() {
                                         <div className="lg:order-2 w-72 h-60 flex items-center justify-center overflow-hidden rounded-xl">
                                             <img
                                                 src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/img/${bigProyImg}.webp`}
-                                                alt={`imagen ${bigProyImg}`}
+                                                alt={`Screenshot de ${t(proyecto.nombreProyecto)}`}
+                                                loading="lazy"
                                                 className="w-4/5 h-4/5 object-contain md:cursor-pointer md:hover:scale-105 transition-transform duration-300 select-none"
                                                 onClick={() => openModal(
                                                     `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/img/${bigProyImg}.webp`,
-                                                    `imagen ${bigProyImg}`,
+                                                    `Screenshot de ${t(proyecto.nombreProyecto)}`,
                                                     proyecto.nombreProyecto
                                                 )}
                                             />
@@ -99,6 +100,7 @@ export default function Proyectos() {
                                                         changeBigProyImage={(proy) => updateBigProyImg(proyecto.id, proy)}
                                                         bigProyImg={bigProyImg}
                                                         isFirstImage={index === 0}
+                                                        proyectoNombre={t(proyecto.nombreProyecto)}
                                                     />
                                                 </div>
                                             ))}
@@ -129,7 +131,7 @@ export default function Proyectos() {
                                             <ul className="flex items-center justify-center gap-3 mb-2">
                                                 {proyecto.tecnologias.map((tecnologia, index) => (
                                                     <li key={index} className="flex items-center gap-1 text-text px-4 py-1.5 text-sm font-medium border border-text border-opacity-30 rounded-full bg-[#07090D] bg-opacity-60">
-                                                        <img className="w-5 h-5" src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/img/${tecnologia.image}.svg`} alt={`imagen de logo ${tecnologia.nombre}`} />
+                                                        <img className="w-5 h-5" loading="lazy" src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/img/${tecnologia.image}.svg`} alt={`Logo de ${tecnologia.name}`} />
                                                         <p>{tecnologia.name}</p>
                                                     </li>
                                                 ))}

@@ -17,16 +17,15 @@ export default function Landing() {
                         <p className="mb-6 text-lg font-normal text-grisclaro2 md:text-base 2xl:text-xl [text-wrap:balance]">{t('header.descripcion')}</p>
 
                         <div className="flex items-center justify-center lg:justify-start gap-5">
-                            <Link legacyBehavior href={i18n.language === 'es' ? 'https://drive.google.com/file/d/1yaeFqIJeDZUWS6APVDF-oAvOP4Or7UQM/view?usp=drive_link' : 'https://drive.google.com/file/d/1mbRPHPwk1ADlRseK7U7hAbn540B9WiEa/view?usp=sharing'} >
-                                <a
-                                    target="_blank"
-                                    className="flex gap-1 items-center py-2.5 px-5 text-sm text-white font-medium bg-transparent rounded-full border transition duration-300 hover:bg-colorboton hover:scale-105 hover:shadow-[0_0_20px_3px_rgba(30,125,103,0.7)]"
-                                >
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                                    </svg>
-                                    {t('botones.descargarCV')}
-                                </a>
+                            <Link
+                                href={i18n.language === 'es' ? 'https://drive.google.com/file/d/1yaeFqIJeDZUWS6APVDF-oAvOP4Or7UQM/view?usp=drive_link' : 'https://drive.google.com/file/d/1mbRPHPwk1ADlRseK7U7hAbn540B9WiEa/view?usp=sharing'}
+                                target="_blank"
+                                className="flex gap-1 items-center py-2.5 px-5 text-sm text-white font-medium bg-transparent rounded-full border transition duration-300 hover:bg-colorboton hover:scale-105 hover:shadow-[0_0_20px_3px_rgba(30,125,103,0.7)]"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                                </svg>
+                                {t('botones.descargarCV')}
                             </Link>
 
                             <ul className="flex gap-4">

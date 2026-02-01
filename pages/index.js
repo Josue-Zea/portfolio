@@ -5,6 +5,7 @@ import Proyectos from "../components/Proyectos"
 import Tecnologias from "../components/Tecnologias"
 import Logros from "../components/Logros"
 import Contacto from "../components/Contacto"
+import AnimateOnScroll from "../components/AnimateOnScroll"
 import { ToastContainer } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 
@@ -18,11 +19,21 @@ export default function Home() {
           backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH || ""}/img/bg-web.webp)`
         }}
       >
-        <Sobremi />
-        <Proyectos />
-        <Tecnologias />
-        <Logros />
-        <Contacto />
+        <AnimateOnScroll>
+          <Sobremi />
+        </AnimateOnScroll>
+        <AnimateOnScroll>
+          <Proyectos />
+        </AnimateOnScroll>
+        <AnimateOnScroll>
+          <Tecnologias />
+        </AnimateOnScroll>
+        <AnimateOnScroll>
+          <Logros />
+        </AnimateOnScroll>
+        <AnimateOnScroll>
+          <Contacto />
+        </AnimateOnScroll>
         <ToastContainer />
       </div>
     </Layout>
